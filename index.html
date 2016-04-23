@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Cifrado de datos.</title>
+
+		<meta name="description" content="Cryptografia">
+		<meta name="author" content="Jose Suarez">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="img/default.jpg">
+				</br></br></br></br></br></br></br></br></br></br></br>
+					<h1>Cifrado de datos</h1>
+				</section>
+				<section data-background="#0E3B65">
+					<style type="text/css">
+					.round{
+						width: 350px;
+						height: 350px;
+						border-radius: 200px;
+						-webkit-border-radius: 200px;
+						-moz-border-radius: 200px;
+						}
+					</style>
+					<h2>Jose Suarez</h2>
+					<img src="img/moz1.png" class="round" >
+					<p>Estudiante de 7mo semestre de Ing. Sistemas.</p>
+					<p>FSA, Mozillero, y entusiasta de la seguridad informatica.</p>
+					<p>Github + Twitter: @Josexv1</p>
+				</section>
+				<section data-background="#0E3B65">
+					<h1>Que es el cifrado?</h1>
+					<p> Es el proceso donde por el que una información legible se transforma mediante un algoritmo (llamado cifra) en información ilegible
+					</p>
+				</section>
+				<section data-background="#0E3B65">
+				<h1>Criptografia</h1>
+				<div>
+				    <span class="fragment" data-fragment-index="1"> Mi mensaje </span>
+				    <span class="fragment" data-fragment-index="2" style="color:red;" > Encriptar </span>
+				</div>
+				<div>
+				    <span class="fragment" data-fragment-index="3"> !#4!@3dxd@ </span>
+				</div>
+				<div>
+				    <span class="fragment" data-fragment-index="4" style="color:green;" > Desencriptar >>  </span>
+				    <span class="fragment" data-fragment-index="5"> Mi Mensaje</span>
+				</div>
+				</section>
+				<section data-background="#0E3B65">
+					<h2>Lo mismo, pero con Ka</h2>
+					<p>Hola = Kaho kala</p>
+					<p>Prueba = Kapru Kae Kaba</p>
+				</section>
+				<section data-background="#0E3B65">
+					<h2>Mucho mas atras.</h2>
+					<p>Criptografia, viene de la antigua Grecia.</p>
+					<p>krypto “ocultar” y graphos “escribir”, es decir escritura oculta.</p>
+				</section>
+				<section data-background="#0E3B65">
+					<h2>No tan atras.</h2>
+					<img src="img/5yo.gif">
+				</section>
+				<section data-background="#0E3B65">
+					<h2>HTTPS!</h2>
+					<p>Protocolo seguro de transferencia de hipertexto</p>
+					<img src="img/2.png">
+				</section>
+				<section data-background="#0E3B65">
+					<h2>Encodear vs. Encryptar vs. Hashear vs. Obfuscar</h2>
+					<p>Cuales son las diferencias?</p>
+				</section>
+				<section data-background="#0E3B65">
+					<h1>Encodear.</h1>
+					<p>Es transformar la informacion para que alguna APP lo lea correctamente.</p>
+				</section>
+				<section data-background="#0E3B65">
+				<h1>Encryptar</h1>
+				<p>Es transformar la informacion con un metodo revertible.</p>
+					
+				</section>
+				<section data-background="#0E3B65">
+				<h1>Hashear</h1>
+				<p>Es transformar la informacion con un metodo irreversible.</p>
+				<ul>
+					<li>El mismo dato, producira el mismo resultado</li>
+					<li>Multiples datos, no pueden producir el mismo resultado</li>
+					<li>No debe ser posible ir del resultado al origen</li>
+					<li>Una modificacion al dato resulta en un cambio drastico del resultado</li>
+				</ul>
+				</section>
+				<section data-background="#0E3B65">
+				<h1>Ofuscar</h1>
+				<p>Es intentar hacer mas dificil de leer algo, para evitar que lo copien sin permiso, o lo ataquen.</p>
+				<small>Por ejemplo mi letra.</small>
+				</section>
+				<section data-background="#0E3B65">
+				<h1>Cifrados modernos</h1>
+				<ul>
+					<li>Triple DES</li>
+					<small>Usa 3 claves que se multiplican de 56bits, ya esta pasado de moda</small>
+					<li>RSA (el mas comun asincrono)</li>
+					<small>Popular con PGP, usa Clave publica, y privada.</small>
+					<li>Blowfish (Comun Asimetrico)</li>
+					<small>Desarrollado para reemplazar DES, separa la informacion en bloques de 64 bits y los cifra individualmente</small>
+					<li>Twofish</li>
+					<li>AES (Comun en routers.)</li>
+					<small>Se cree que es inmune a todo tipo de ataques, menos a fuerza bruta.</small>
+				</ul>
+					
+				</section>
+				<section data-background="#0E3B65">
+				<h1>El futuro!</h1>
+				<p>Actualmente con nuestro poder de procesamiento es imposible romper una clave de 1024 bits</p>
+				<p>Las computadoras Quanticas, y la matematica, pueden cambiar eso rapidamente, pero no en un futuro cercano.</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: false,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
